@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÔNG TY TNHH PHÁT TRIỂN CÔNG NGHỆ RUNTIME</title>
+    <script src="https://kit.fontawesome.com/5716f23b37.js" crossorigin="anonymous"></script>
+    <link href="./style.css " rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <div class="left">
+                <div id="email">
+                    <i class="fas fa-envelope"></i>
+                    <div class="class">run01@runtime.vn |</div>
+                </div>
+                <div id="phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <div id="phoneNum">0908 77 00 95</div>
+                </div>
+            </div>
+            <div class="right">
+                <span id="account"><a href="#" id="login">Đăng nhập</a> / <a href="#" id="register">Đăng ký</a>
+                    <div class="login-form">
+                        <div class="form-wrapper">
+                            <div class="form mail">
+                                <p>Email</p>
+                                <input type="text">
+                            </div>
+                            <div class="form password">
+                                <p>Password</p>
+                                <input type="password">
+                            </div>
+                            <input class="login-btn" type="button" value="Đăng nhập">
+                            <p><a href="#"><i>Quên mật khẩu?</i></a></p>
+                        </div>
+                    </div>
+                </span>
+                <span id="search"> <input type="text" placeholder="Tìm kiếm...">
+                    <i class="fas fa-search"></i> </span>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- head-res -->
+    <div class="head-res-wrapper">
+        <div class="head-res">
+            <div class="menu1-res">
+                <i onclick="showMenu()" id="menu-ic" class="fas fa-bars"></i>
+            </div>
+            <div class="cart-acc-res">
+                <div class="cart-res">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>
+                        <span id="cart-text-res">Giỏ hàng:</span>
+                        <span id='cart-num-res'>0</span>
+                    </span>
+                </div>
+                <div class="acc-res">
+                    <i onclick="handleShow()" class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu1-res">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li onclick="subMenu()" class="li-click">
+                    <a href="#">Sản phẩm
+                    <i id="arrow" class="fas fa-angle-down"></i>
+                </a>
+                <ul id="sub-menu1-res">
+                    <li><a href="#">sub</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div class="login-reg-res">
+        <span id="account-res"><a href="#" id="login">Đăng nhập</a> / <a href="#" id="register">Đăng ký</a>
+            <div class="login-form-res">
+                <div class="form-wrapper">
+                    <div class="form mail">
+                        <p>Email</p>
+                        <input type="text">
+                    </div>
+                    <div class="form password">
+                        <p>Password</p>
+                        <input type="password">
+                    </div>
+                    <input class="login-btn" type="button" value="Đăng nhập">
+                    <p><a href="#"><i>Quên mật khẩu?</i></a></p>
+                </div>
+            </div>
+        </span>
+    </div>
+
+
+    <div class="middle-header">
+        <div class="container2">
+            <div id="logo">
+                <img src="http://runecom01.runtime.vn/Uploads/shop910/images/logo.png">
+            </div>
+            <div class="menu-cart">
+                <div id="menu1">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Sản phẩm
+                                <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="sub-menu1">
+                                <li><a href="#">sub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div id="cart">
+                    <table>
+                        <tr>
+                            <td class="cart-ic"><i class="fas fa-shopping-cart"></i></td>
+                            <td>
+                                <span id="cart-text">Giỏ hàng:</span>
+                                <span id='cart-num'>0</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="search-res">
+                <input type="text" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="section1">
+            <div class="container3">
+                <div class="left">
+                    <div id="menu2">
+                        <div class="title">
+                            <i class="fab fa-elementor"></i>
+                            <div class="text">DANH MỤC</div>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="item-text">
+                                    <i class="fas fa-tshirt"></i>
+                                    <a href="#">Thời trang</a>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                                <table class="sub-menu2">
+                                    <tr>
+                                        <td><a href="#">Áo sơ mi</a></td>
+                                        <td><a href="#">Áo</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Túi</a></td>
+                                        <td><a href="#">Trang phục</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Phụ kiện</a></td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <i class="fas fa-utensils"></i>
+                                    <a href="#">Thực phẩm</a>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <i class="fas fa-plug"></i>
+                                    <a href="#">Điện tử</a>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <i class="fas fa-couch"></i>
+                                    <a href="#">Nội thất</a>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <a href="#">Nữ trang</a>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <i class="far fa-grin-hearts"></i>
+                                    <a href="#">Mỹ phẩm</a>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                                <table class="sub-menu2">
+                                    <tr>
+                                        <td><a href="#">Kem dưỡng ẩm</a></td>
+                                        <td><a href="#">Son môi</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Sơn móng tay</a></td>
+                                        <td><a href="#">Trang điểm</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Dưỡng tóc</a></td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <div class="item-text">
+                                    <i class="fas fa-gift"></i>
+                                    <a href="#">Quà tặng</a>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="menu2-mobile">
+                        <div onclick="showMenu2()" class="title">
+                            <i class="fab fa-elementor"></i>
+                            <div class="text">DANH MỤC</div>
+                        </div>
+                        <ul id="menu2-res">
+                            <li>
+                                <div class="have-sub">
+                                    <div class="item-text">
+                                        <i class="fas fa-tshirt"></i>
+                                        <a href="#">Thời trang</a>
+                                    </div>
+                                    <i onclick="showSubMenu2(0)" class="arrow-down fas fa-chevron-down"></i>
+                                </div>
+                                <ul class="sub-menu2-mobile">
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Áo sơ mi</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Áo</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Túi</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Trang phục</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Phụ kiện</a></li>
+                                </ul>
+                            </li>
+                            <li class="no-sub">
+                                <div class="item-text">
+                                    <i class="fas fa-utensils"></i>
+                                    <a href="#">Thực phẩm</a>
+                                </div>
+                                
+                
+                            </li>
+                            <li class="no-sub">
+                                <div class="item-text">
+                                    <i class="fas fa-plug"></i>
+                                    <a href="#">Điện tử</a>
+                                </div>
+                                
+                            </li>
+                            <li class="no-sub">
+                                <div class="item-text">
+                                    <i class="fas fa-couch"></i>
+                                    <a href="#">Nội thất</a>
+                                </div>
+                                
+                            </li>
+                            <li class="no-sub">
+                                <div class="item-text">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <a href="#">Nữ trang</a>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <div class="have-sub">
+                                    <div class="item-text">
+                                        <i class="far fa-grin-hearts"></i>
+                                        <a href="#">Mỹ phẩm</a>
+                                    </div>
+                                    <i onclick="showSubMenu2(1)" class="arrow-down fas fa-chevron-down"></i>
+                                </div>
+                                <ul class="sub-menu2-mobile">
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Kem dưỡng ẩm</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Son môi</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Sơn móng tay</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Trang điểm</a></li>
+                                    <li>
+                                        <i class="fas fa-check"></i>
+                                        <a href="#">Dưỡng tóc</a></li>
+                                </ul>
+                            </li>
+                            <li no-sub>
+                                <div class="item-text">
+                                    <i class="fas fa-gift"></i>
+                                    <a href="#">Quà tặng</a>
+                                </div>
+                                
+                            </li>
+                
+                        </ul>
+                    </div>
+
+                    <div class="banner banner-1">
+                        <img src="http://runecom01.runtime.vn/Uploads/shop910/images/banner_img_1.jpg">
+                    </div>
+                    <div class="banner banner-2">
+                        <img src="http://runecom01.runtime.vn/Uploads/shop910/images/banner_img_2.jpg">
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <div class="slide-show">
+                        <div class="container-ss">
+                            <div class="ss img-ss">
+                                <img src="http://runecom01.runtime.vn/Uploads/shop910/images/slideshow_1.jpg">
+                            </div>
+                            <div class="ss img-ss">
+                                <img src="http://runecom01.runtime.vn/Uploads/shop910/images/slideshow_2.jpg">
+                            </div>
+                            <div class="ss img-ss">
+                                <img src="http://runecom01.runtime.vn/Uploads/shop910/images/slideshow_3.jpg">
+                            </div>
+                            <div class="dot-container" style="text-align:center">
+                                <span class="dot" onclick="currentSlide(0)"></span>
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flash-sale">
+                        <div class="wrapper">
+                            <div class="sub-header">
+                                <a href="#" class="previous round">&#8249;</a>
+                                <div class="title">ƯU ĐÃI LỚN</div>
+                                <a href="#" class="next round">&#8250;</a>
+                            </div>
+                            <div class="product-sale">
+                                <div class="img-product">
+                                    <div class="saleNum">-52%</div>
+                                    <img
+                                        src="http://runecom01.runtime.vn/Uploads/shop910/images/products/ao-belike1_master.jpg">
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">Áo thun nữ Belike</a></div>
+                                    <div class="price">
+                                        <div class="orginal-price"><strike>200.000đ</strike></div>
+                                        <div class="final-price">95.200đ</div>
+                                    </div>
+                                    <div class="desc">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit
+                                        doloremque enim recusandae fugit expedita eveniet vitae sequi quasi.
+                                        Voluptatibus
+                                        eligendi sapiente beatae nostrum debitis cumque quas qui dicta iste? Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit.
+
+                                    </div>
+                                    <div class="countdown">
+                                        <div class="item item1">
+                                            <div class="num">0</div>
+                                            <div class="text">Ngày</div>
+                                        </div>
+                                        <div class="item item2">
+                                            <div class="num">00</div>
+                                            <div class="text">Giờ</div>
+                                        </div>
+                                        <div class="item item2">
+                                            <div class="num">00</div>
+                                            <div class="text">Phút</div>
+                                        </div>
+                                        <div class="item item2">
+                                            <div class="num">00</div>
+                                            <div class="text">Giây</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="part1">
+                        <div class="title">Sản phẩm khuyến mãi</div>
+                        <div class="list-product">
+                            <div class="product product-1">
+                                <div onclick="addToCart()" class="img">
+                                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/products/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg">
+                                    <div class="animation1">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <div class="show-text">Add to card</div>
+                                </div>
+                                <div class="info">
+                                    <p class="name">Son môi Itachi
+                                    </p>
+                                    <p class="price">
+                                        600000đ
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product product-2">
+                                <div onclick="addToCart()" class="img">
+                                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/products/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg">
+                                    <div class="animation1">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <div class="show-text">Add to card</div>
+                                </div>
+                                <div class="info">
+                                    <p class="name">Son môi Itachi
+                                    </p>
+                                    <p class="price">
+                                        600000đ
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product product-3">
+                                <div onclick="addToCart()" class="img">
+                                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/products/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg">
+                                    <div class="animation1">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <div class="show-text">Add to card</div>
+                                </div>
+                                <div class="info">
+                                    <p class="name">Son môi Itachi
+                                    </p>
+                                    <p class="price">
+                                        600000đ
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product product-4">
+                                <div onclick="addToCart()" class="img">
+                                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/products/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg">
+                                    <div class="animation1">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <div class="show-text">Add to card</div>
+                                </div>
+                                <div class="info">
+                                    <p class="name">Son môi Itachi
+                                    </p>
+                                    <p class="price">
+                                        600000đ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="part2">
+                        <div class="title">
+                            Đăng ký nhận tin
+                        </div>
+                        <div class="dky">
+                            <input id="your-email" type="text" placeholder="Email của bạn"></br>
+                        </div>
+                        <div class="btn">
+                            <input id="reg-btn" type="button" value="ĐĂNG KÝ">
+                        </div>
+                    </div>
+
+                    <div class="ajax">
+                        <div class="ajax-wrapper">
+                            <div class="title">
+                                AJAX
+                            </div>
+                            <form>
+                                <select name="title-ajax">
+                        
+                                </select>
+                        
+                            </form>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <img class="banner-sale" src="http://runecom01.runtime.vn/Uploads/shop910/images/banner_home_img.jpg">
+        </div>
+
+        <div class="section3">
+            <div class="s3-wrapper">
+                <div class="container-s3">
+                    <div class="fashion">
+                        <div class="menu-fa">
+                            <div class="fashion-head">
+                                <i class="fas fa-tshirt"></i>
+                                <span class="title-fa">THỜI TRANG</span>
+                            </div>
+                            <div class="list-fa">
+                                <ul>
+                                    <li class="btn-fa" onclick="selectItem(0)"><a>Tất cả</a></li>
+                                    <li class='btn-fa' onclick="selectItem(1)"><a>Áo sơ mi</a></li>
+                                    <li class='btn-fa' onclick="selectItem(2)"><a>Áo</a></li>
+                                    <li class='btn-fa' onclick="selectItem(3)"><a>Túi</a></li>
+                                    <li class='btn-fa' onclick="selectItem(4)"><a>Trang phục</a></li>
+                                    <li class='btn-fa' onclick="selectItem(5)"><a>Phụ kiện</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="content-fa">
+                            <div class="content-fa1">
+                                <div class="select-fa">
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/ao-somi-2_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/ao-belike1_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/ao-yem-1_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/1200_6_451_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/2_44_90_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/1200_17_67_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-fa1">Áo sơ mi</div>
+                            <div class="content-fa1">Áo</div>
+                            <div class="content-fa1">Túi</div>
+                            <div class="content-fa1">Trang phục</div>
+                            <div class="content-fa1">Phụ kiện</div>
+                        </div>
+                    </div>
+                    <div class="side1">
+                        <img src="http://runecom01.runtime.vn/Uploads/shop910/images/products/tabs_1_slider_img_1.jpg">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- <div class="section4">
+            <div class="s4-wrapper">
+                <div class="container-s3">
+                    <div class="cosmestic">
+                        <div class="menu-cos">
+                            <div class="cos-head">
+                                <i class="fas fa-tshirt"></i>
+                                <span class="title-fa">MỸ PHẨM</span>
+                            </div>
+                            <div class="list-fa">
+                                <ul>
+                                    <li class="btn-fa" onclick="selectItem()"><a>Tất cả</a></li>
+                                    <li class='btn-fa' onclick="selectItem()"><a>Kem dưỡng ẩm</a></li>
+                                    <li class='btn-fa' onclick="selectItem()"><a>Son môi</a></li>
+                                    <li class='btn-fa' onclick="selectItem()"><a>Sơn móng tay</a></li>
+                                    <li class='btn-fa' onclick="selectItem()"><a>Trang điểm</a></li>
+                                    <li class='btn-fa' onclick="selectItem()"><a>Dưỡng tóc</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="content-fa">
+                            <div class="content-fa1">
+                                <div class="select-fa">
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/ao-somi-2_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/ao-belike1_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/ao-yem-1_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/1200_6_451_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/2_44_90_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                    <div class="select-p1">
+                                        <img
+                                            src="http://runecom01.runtime.vn/Uploads/shop910/images/products/1200_17_67_master.jpg">
+                                        <div class="name-p1">Áo sơ mi nữ VNXK</div>
+                                        <div class="price-p1">280.000đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-fa1">Áo sơ mi</div>
+                            <div class="content-fa1">Áo</div>
+                            <div class="content-fa1">Túi</div>
+                            <div class="content-fa1">Trang phục</div>
+                            <div class="content-fa1">Phụ kiện</div>
+                        </div>
+                    </div>
+                    <div class="side1">
+                        <img src="http://runecom01.runtime.vn/Uploads/shop910/images/products/tabs_1_slider_img_1.jpg">
+                    </div>
+                </div>
+                
+            </div>
+        </div> -->
+        
+        <div class="brand-slider">
+            <div class="slider-wrapper">
+                <div class="brand show brand1">
+                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/partner_img_1.png">
+                </div>
+                <div class="brand brand2">
+                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/partner_img_2.png">
+                </div>
+                <div class="brand brand3">
+                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/partner_img_3.png">
+                </div>
+                <div class="brand brand4">
+                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/partner_img_4.png">
+                </div>
+                <div class="brand brand5">
+                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/partner_img_5.png">
+                </div>
+                <div class="brand brand6">
+                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/partner_img_6.png">
+                </div>
+                <div class="brand show brand7">
+                    <img src="http://runecom01.runtime.vn/Uploads/shop910/images/partner_img_1.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="benefit">
+        <div class="sec sec1">
+            <i class="icon icon1 fas fa-headset"></i>
+            <div class="content">
+                <div class="title">24/7</div>
+                <div class="text">Hỗ trợ miễn phí</div>
+            </div>
+        </div>
+        <div class="sec sec2">
+            <i class="icon icon2 fas fa-hand-holding-usd"></i>
+            <div class="content">
+                <div class="title">100% hoàn tiền</div>
+                <div class="text">Bảo hành</div>
+            </div>
+        </div>
+        <div class="sec sec3">
+            <i class="icon icon3 fas fa-shipping-fast"></i>
+            <div class="content">
+                <div class="title">Miễn phí shipping</div>
+                <div class="text">Trên 5 đơn hàng</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="about">
+                <div class="item1">
+                    <div class="title">Về chúng tôi</div>
+                    <div class="content content1">
+                        <p>Giới thiệu</p>
+                        <p>Giao hàng - Đổi trả</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Liên hệ</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="title">
+                        Trợ giúp
+                    </div>
+                    <div class="content content2">
+                        <p>Hướng dẫn mua hàng</p>
+                        <p>Hướng dẫn thanh toán</p>
+                        <p>Tài khoản giao dịch</p>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="title">Kết nối với chúng tôi</div>
+                    <div class="content">
+                        <p id="fb">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </p>
+                        <p id="gg">
+                            <i class="fab fa-google-plus-g"></i>
+                            <span>Google Plus</span>
+                        </p>
+                        <p id="tt">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </p>
+                        <p id="fl">
+                            <i class="fab fa-flickr"></i>
+                            <span>Flick</span>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="item4">
+                    <div class="title">
+                        Hãy đến với chúng tôi
+                    </div>
+                </div>
+
+            </div>
+            <div class="copy-right">
+                <div class="text">
+                    Copyright © 2016 Big Market. Powered by RUNTIME.VN.
+                </div>
+                <div class="payment">
+                    <img src="http://runecom01.runtime.vn/assets/100001/img/payment-logo.png?v=5676">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="main.js"></script>
+
+</html>

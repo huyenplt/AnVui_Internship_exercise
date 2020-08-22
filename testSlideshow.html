@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./st.css " rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="slide-show">
+        <div class="container-ss">
+            <div class="ss img-ss">
+                <img src="http://runecom01.runtime.vn/Uploads/shop910/images/slideshow_1.jpg">
+            </div>
+            <div class="ss img-ss">
+                <img src="http://runecom01.runtime.vn/Uploads/shop910/images/slideshow_2.jpg">
+            </div>
+            <div class="ss img-ss">
+                <img src="http://runecom01.runtime.vn/Uploads/shop910/images/slideshow_3.jpg">
+            </div>
+            <div class="dot-container" style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var slideshows = document.querySelectorAll(".ss")
+        /* console.log(slideshows); */
+        slideshows.forEach(handleSlideShow);
+        han
+    </script>
+    <a href="#" class="previous">&laquo; Previous</a>
+    <a href="#" class="next">Next &raquo;</a>
+</body>
+</html>

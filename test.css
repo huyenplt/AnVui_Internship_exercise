@@ -1,0 +1,26 @@
+.brand-slider{
+  width: 70%;
+  margin: auto;
+}
+.slider-wrapper{
+  display: flex;
+  margin-bottom: 50px;
+}
+.brand{
+  width: 16.6%;
+}
+.brand img{
+  width: 100%;
+}
+/* .brand7 {
+  display: none;
+  
+  
+}
+.brand1{
+  display: none;
+  
+  
+} */
+
+
